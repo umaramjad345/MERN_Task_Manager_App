@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --font-family: "Roboto";
+  --primary-color: rgb(97, 89, 136);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: var(--font-family), sans-serif;
+}
+
+.container {
+  max-width: 1180px;
+}
+
+.submitBtn, .profile .form button, .login .container .form button, .register .container .form button {
+  border: 2px solid var(--primary-color);
+  font-size: 1.125rem;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.submitBtn:hover, .profile .form button:hover, .login .container .form button:hover, .register .container .form button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.navBtn {
+  border: 2px solid var(--primary-color);
+  border-radius: 300px;
+  outline: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.navBtn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.filterBtn {
+  border: 2px solid var(--primary-color);
+  border-radius: 300px;
+  outline: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.filterBtn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.navbar {
+  background-color: rgb(235, 234, 234);
+  padding: 10px 0;
+}
+.navbar .container {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+}
+.navbar .container .account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.register .container {
+  height: 85vh;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register .container .heading {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.register .container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+}
+.register .container .form input {
+  font-size: 1rem;
+  color: var(--primary-color);
+  padding: 12px 15px;
+  background-color: rgba(236, 234, 234, 0.651);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.register .container .form button {
+  color: var(--primary-color);
+}
+.register .container .text {
+  font-size: 1rem;
+  width: 40%;
+  color: var(--primary-color);
+}
+
+.login .container {
+  height: 85vh;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login .container .heading {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.login .container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+}
+.login .container .form input {
+  font-size: 1rem;
+  color: var(--primary-color);
+  padding: 12px 15px;
+  background-color: rgba(236, 234, 234, 0.651);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.login .container .form button {
+  color: var(--primary-color);
+}
+.login .container .text {
+  font-size: 1rem;
+  width: 40%;
+  color: var(--primary-color);
+}
+
+.profile {
+  width: 40%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile .heading {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.profile .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.profile .form input {
+  font-size: 1rem;
+  color: var(--primary-color);
+  padding: 12px 15px;
+  background-color: rgba(236, 234, 234, 0.651);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.profile .form button {
+  color: var(--primary-color);
+}
+.profile .text {
+  font-size: 1rem;
+  width: 100%;
+  color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userTasks .filterBtns {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.userTasks .filterBtns button {
+  text-wrap: nowrap;
+  border-radius: 5px;
+  outline: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.userTasks .filterBtns button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+.userTasks .filterBtns button:hover {
+  background-color: rgb(223, 220, 220);
+}
+.userTasks .filterBtns button:hover::before {
+  width: 100%;
+}
+.userTasks .table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+}
+.userTasks .table .tableHead .title {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  width: 10rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.userTasks .table .tableHead .description {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  width: 20rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.userTasks .table .tableHead .status {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  width: 10rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.userTasks .table .tableHead .date {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  width: 8rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.userTasks .table .tableHead .update {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  width: 8rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.userTasks .table .tableHead .delete {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  width: 8rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.userTasks .table .tableBody .title {
+  width: 10rem;
+  text-align: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.userTasks .table .tableBody .description {
+  width: 20rem;
+  text-align: justify;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.userTasks .table .tableBody .status {
+  width: 10rem;
+  text-align: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.userTasks .table .tableBody .date {
+  width: 8rem;
+  text-align: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.userTasks .table .tableBody .update {
+  width: 8rem;
+  text-align: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  color: red;
+  cursor: pointer;
+}
+.userTasks .table .tableBody .update:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.userTasks .table .tableBody .delete {
+  width: 8rem;
+  text-align: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  color: red;
+  cursor: pointer;
+}
+.userTasks .table .tableBody .delete:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}/*# sourceMappingURL=App.css.map */
